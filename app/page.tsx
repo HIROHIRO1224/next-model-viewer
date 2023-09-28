@@ -1,5 +1,14 @@
 "use client";
-import { ModelViewer } from "./_components/ModelViewer";
+
+import dynamic from "next/dynamic";
+
+const ModelViewer = dynamic(
+  async () => {
+    const p = await import("./_components/ModelViewer");
+    return p.ModelViewer;
+  },
+  { ssr: false }
+);
 export default function Home() {
   return (
     <div style={{ height: "100vh" }}>
