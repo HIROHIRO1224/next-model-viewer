@@ -14,7 +14,7 @@ export default function Home() {
     <div style={{ height: "80vh" }}>
       <ModelViewer
         poster={""}
-        glb={"/pucho.glb"}
+        glb={"/pucho.gltf"}
         usdz={"/pucho.usdz"}
         alt={""}
         height="80vh"
