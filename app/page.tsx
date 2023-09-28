@@ -1,7 +1,6 @@
 "use client";
 
 import dynamic from "next/dynamic";
-
 const ModelViewer = dynamic(
   async () => {
     const p = await import("./_components/ModelViewer");
@@ -14,8 +13,8 @@ export default function Home() {
     <div style={{ height: "80vh" }}>
       <ModelViewer
         poster={""}
-        glb={"/pucho.zip"}
-        usdz={"/pucho.usdz"}
+        glb={"/cat.glb"}
+        usdz={"/cat.usdz"}
         alt={""}
         height="80vh"
       />
