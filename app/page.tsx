@@ -15,7 +15,7 @@ export default function Home() {
       <ModelViewer
         poster={""}
         glb={"/cat.glb"}
-        usdz={"/cat.glb"}
+        usdz={"/cat.usdc"}
         alt={""}
         height="80vh"
       />
