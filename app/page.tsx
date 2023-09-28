@@ -11,7 +11,7 @@ const ModelViewer = dynamic(
 );
 export default function Home() {
   return (
-    <div style={{ height: "100vh" }}>
+    <div style={{ height: "80vh" }}>
       <ModelViewer
         poster={""}
         glb={"/cat.glb"}
