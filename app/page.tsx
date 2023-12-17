@@ -1,23 +1,40 @@
-"use client";
+import { ModelViewer } from "./_components/ModelViewer";
 
-import dynamic from "next/dynamic";
-const ModelViewer = dynamic(
-  async () => {
-    const p = await import("./_components/ModelViewer");
-    return p.ModelViewer;
-  },
-  { ssr: false }
-);
 export default function Home() {
   return (
-    <div style={{ height: "80vh" }}>
+    <div style={{ height: "90vh" }}>
       <ModelViewer
         poster={""}
         glb={"/cat.glb"}
         usdz={"/cat.usdz"}
         alt={""}
-        height="80vh"
-      />
+        height="100%"
+        ar
+        arMode="webxr"
+        cameraControl
+      >
+        <div
+          slot="ar-button"
+          style={{
+            position: "absolute",
+            top: "16px",
+            left: "16px",
+            width: "50px",
+            height: "30px",
+          }}
+        >
+          <div
+            style={{
+              borderRadius: "50%",
+              backgroundColor: "whitesmoke",
+              color: "grey",
+              textAlign: "center",
+            }}
+          >
+            AR
+          </div>
+        </div>
+      </ModelViewer>
     </div>
   );
 }
