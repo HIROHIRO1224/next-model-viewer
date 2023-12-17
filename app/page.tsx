@@ -5,8 +5,8 @@ export default function Home() {
     <div style={{ height: "90vh" }}>
       <ModelViewer
         poster={""}
-        glb={"/cat.glb"}
-        usdz={"/cat.usdz"}
+        glb={"cat.glb"}
+        usdz={"cat.usdz"}
         alt={""}
         height="100%"
         ar
